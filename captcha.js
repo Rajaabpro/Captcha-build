@@ -12,5 +12,14 @@ function validateCaptcha() {
     const userInput = document.getElementById('userInput').value;
     const result = document.getElementById('result');
   
-}
+    if (userInput === captchaCode) {
+      result.style.color = 'green';
+      result.textContent = 'CAPTCHA verified!';
+    } else {
+      result.style.color = 'red';
+      result.textContent = 'Incorrect CAPTCHA. Try again.';
+      generateCaptcha(); // refresh captcha on failure
+    }
+  }
+  
   window.onload = generateCaptcha;
