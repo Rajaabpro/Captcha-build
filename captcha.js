@@ -8,3 +8,9 @@ function generateCaptcha() {
     }
     document.getElementById('captcha').textContent = captchaCode;
 }
+function validateCaptcha() {
+    const userInput = document.getElementById('userInput').value;
+    const result = document.getElementById('result');
+  
+}
+  window.onload = generateCaptcha;
