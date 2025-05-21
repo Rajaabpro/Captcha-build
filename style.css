@@ -6,4 +6,13 @@ body {
     align-items: center;
     padding-top: 60px;
   }
-  
+  #captcha {
+    font-size: 28px;
+    background: #e0e0e0;
+    padding: 10px 20px;
+    border: 2px dashed #888;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    user-select: none;
+    letter-spacing: 5px;
+  }
